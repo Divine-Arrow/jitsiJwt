@@ -31,7 +31,7 @@ app.get('/api/call/room', (req, res) => {
     jwt.sign(payload, Env.secretKey, (err, jitsiToken) => {
         if(err) return res.status(500).json({error: 'Something went wrong'});
         res.set('jitsiToken', jitsiToken);
-        res.json({room: userId});
+        res.json({room: userId, jitsiToken});
         // using iframe/sdk, frontend will handle this Token to initialize call
     });
 })
