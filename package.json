@@ -1,0 +1,19 @@
+{
+  "name": "jitsi_demo",
+  "version": "1.0.0",
+  "description": "Demo for Jitsi JWT",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "nodemon server.js"
+  },
+  "engines": {
+    "node": "8.11.1"
+  },
+  "author": "Bhupender Singh & Satender",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.17.1",
+    "jsonwebtoken": "^8.5.1"
+  }
+}
