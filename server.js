@@ -2,14 +2,14 @@
 const express = require('express');
 const jwt = require('jsonwebtoken');
 const app = express();
-const PORT = process.env.PORT || 3000;
+const PORT = process.env.PORT ?? 3000;
 const Env = {
     app_id: 'app_id',
     secretKey: 'password', // secret key must be same as on the jitsi server
     domain: 'jistinew.meest4bharat.net'
 };
 
-app.get('/', (req, res) => res.send('Hello'))
+app.get('/', (req, res) => res.send('Welcome to the Homepage !'))
 
 app.get('/api/call/room', (req, res) => {
     const { host, userId } = req.query;

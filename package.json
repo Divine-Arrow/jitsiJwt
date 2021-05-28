@@ -7,9 +7,6 @@
     "start": "node server.js",
     "dev": "nodemon server.js"
   },
-  "engines": {
-    "node": "8.11.1"
-  },
   "author": "Bhupender Singh & Satender",
   "license": "ISC",
   "dependencies": {
